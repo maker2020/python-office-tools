@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 AI 办公助手 - 一个脚本搞定所有文件处理</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Microsoft YaHei",sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.hero{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);padding:50px 20px;text-align:center}
+.hero h1{font-size:2em;color:#00d4ff;margin-bottom:10px}
+.hero p{font-size:1.1em;color:#aaa;max-width:500px;margin:0 auto}
+.hero .tag{display:inline-block;background:#ff4757;color:#fff;padding:4px 16px;border-radius:20px;font-size:.9em;margin-top:15px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
+.container{max-width:600px;margin:0 auto;padding:20px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.feat{background:#1a1a2e;border:1px solid #2a2a4a;border-radius:10px;padding:14px}
+.feat .icon{font-size:1.3em;margin-bottom:4px}
+.feat h3{font-size:.9em;color:#fff;margin-bottom:2px}
+.feat p{font-size:.75em;color:#888}
+.download{background:linear-gradient(135deg,#1a1a2e,#16213e);border:2px solid #00d4ff44;border-radius:14px;padding:25px;text-align:center;margin:20px 0}
+.download a{display:inline-block;background:#00d4ff;color:#000;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:1.1em;margin:10px 5px;transition:transform .2s}
+.download a:hover{transform:scale(1.05)}
+.download .alt{background:#2a2a4a;color:#00d4ff}
+.qr{background:#fff;border-radius:14px;padding:25px;text-align:center;margin:20px 0}
+.qr img{width:200px;border-radius:8px}
+.qr h3{color:#333;margin-bottom:10px}
+.qr p{color:#666;font-size:.85em}
+.install{background:#1a1a2e;border-radius:10px;padding:16px;margin:15px 0;font-family:monospace;font-size:.85em;color:#00d4ff;overflow-x:auto}
+footer{text-align:center;padding:20px;color:#444;font-size:.75em}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>🤖 AI 办公助手</h1>
+<p>一个 Python 脚本，搞定 Excel/PDF/图片/数据处理</p>
+<div class="tag">☕ 免费使用 · 觉得有用请作者喝杯咖啡</div>
+</div>
+
+<div class="container">
+
+<div class="features">
+<div class="feat"><div class="icon">📊</div><h3>Excel 合并拆分</h3><p>多文件合并/大文件拆分</p></div>
+<div class="feat"><div class="icon">📄</div><h3>PDF 合并水印</h3><p>批量合并/加文字水印</p></div>
+<div class="feat"><div class="icon">🖼️</div><h3>图片压缩缩放</h3><p>批量处理，保留质量</p></div>
+<div class="feat"><div class="icon">📁</div><h3>批量重命名</h3><p>5种模式，正则替换</p></div>
+<div class="feat"><div class="icon">🧹</div><h3>数据清洗</h3><p>去重、填空、格式化</p></div>
+<div class="feat"><div class="icon">📝</div><h3>OCR 文字提取</h3><p>PDF/图片转文字</p></div>
+</div>
+
+<div class="download">
+<p style="color:#aaa;margin-bottom:10px">📥 免费下载 · 单文件 · 开箱即用</p>
+<a href="ai_office.py" download>⬇️ 下载 ai_office.py</a>
+<a href="requirements.txt" download class="alt">📦 requirements.txt</a>
+</div>
+
+<div class="install">
+pip install pandas openpyxl PyPDF2 Pillow qrcode reportlab<br>
+python ai_office.py
+</div>
+
+<div class="qr">
+<h3>☕ 觉得有用？请作者喝杯咖啡</h3>
+<img src="qrcode.jpg" alt="微信赞赏码">
+<p>微信扫码 · 随心赞赏 · 1元也是爱 ❤️</p>
+</div>
+
+</div>
+
+<footer>AI 办公助手 v1.0 · Made with ❤️ by a Python developer</footer>
+</body>
+</html>
